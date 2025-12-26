@@ -1,4 +1,5 @@
 import React from "react";
+import SmoothScroll from "./components/SmoothScroll";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Feature from "./components/Feature";
@@ -12,23 +13,24 @@ import Universe from "./components/Universe";
 import Updates from "./components/Updates";
 import ZentryGlance from "./components/ZentryGlance";
 
-
 const App = () => {
   return (
-    <main className="relative min-h-screen w-screen overflow-x-hidden">
-      <Navbar/>
-      <Hero />
-      <About />
-      <Feature/>
-      <Story/>
-      <Universe/>
-      <MultiText/>
-      <ZentryGlance/>
-      <Partners/>
-      <Updates/>
-      <Contact/>
-      <Footer/>
-    </main>
+    <SmoothScroll>
+      <main className="relative min-h-screen w-screen overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <About />
+        <Feature />
+        <Story />
+        <Universe />
+        <MultiText />
+        <ZentryGlance />
+        <Partners />
+        <Updates />
+        <Contact />
+        <Footer />
+      </main>
+    </SmoothScroll>
   );
 };
 
